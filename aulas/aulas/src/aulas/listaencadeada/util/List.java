@@ -1,11 +1,11 @@
 package aulas.listaencadeada.util;
 
-public class List {
+public class List<T> {
 	
-	private Node head; // um ponteiro
+	private Node<T> head; // um ponteiro
 	
-	public void add(Double value) {
-		Node node = new Node();
+	public void add(T value) {
+		Node<T> node = new Node<T>();
 		node.setValue(value);
 		node.setNext(head);
 		head = node;
@@ -16,7 +16,7 @@ public class List {
 	public String toString() {
 		StringBuffer stringBuffer = new StringBuffer();
 		stringBuffer.append("[");
-		Node pointer = head;
+		Node<T> pointer = head;
 		while (pointer != null) {
 			stringBuffer.append(pointer.getValue() + " ");
 			pointer = pointer.getNext();

@@ -1,15 +1,15 @@
 package aulas.listaencadeada.util;
 
-public class Node {
+public class Node<T> {
 	
-	private Double value;
-	private Node next; // esse tipo tem uma definição recursiva
+	private T value;
+	private Node<T> next; // esse tipo tem uma definição recursiva
 		
-	public Double getValue() {
+	public T getValue() {
 		return value;
 	}
 	
-	public void setValue(Double value) {
+	public void setValue(T value) {
 		this.value = value;
 	}
 	
@@ -17,7 +17,7 @@ public class Node {
 		return next;
 	}
 	
-	public void setNext(Node next) {
+	public void setNext(Node<T> next) {
 		this.next = next;
 	}
 	

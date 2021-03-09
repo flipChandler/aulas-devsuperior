@@ -24,12 +24,16 @@ public class Program {
 		 * 
 		 * O array busca muito rápido, porém, pra inserir (no meio) precisa empurrar todos elementos
 		 * A lista demora pra encontrar o elemento, porém, pra inserir e remover é mais rápido
+		 * 
+		 * 
+		 * GENERICS: se utilizar Object como tipo do atributo, não tem Type Safety na lista
+		 * porque aceita qualquer tipo, e pode ter um erro em tempo de execução, no casting 
 		 */
 		
 		Scanner scanner = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
 		
-		List list = new List();
+		List<Double> list = new List<Double>();
 		
 		int option;
 		do {
