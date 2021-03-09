@@ -28,6 +28,8 @@ public class Program {
 		 * 
 		 * GENERICS: se utilizar Object como tipo do atributo, não tem Type Safety na lista
 		 * porque aceita qualquer tipo, e pode ter um erro em tempo de execução, no casting 
+		 * 
+		 * O compilador verifica em tempo de compilação se a tipagem da lista está correta
 		 */
 		
 		Scanner scanner = new Scanner(System.in);
